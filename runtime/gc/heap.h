@@ -1468,10 +1468,6 @@ class Heap {
   // GC.
   Atomic<size_t> num_bytes_freed_revoke_;
 
-  // Records the number of bytes allocated at the time of GC, which is used later to calculate
-  // how many bytes have been allocated since the last GC
-  size_t num_bytes_alive_after_gc_;
-
   // Info related to the current or previous GC iteration.
   collector::Iteration current_gc_iteration_;
 
